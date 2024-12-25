@@ -1,3 +1,8 @@
+appraise "activerecord-7.1.2" do
+  gem 'activerecord', '~> 7.1.2'
+  gem 'railties', '~> 7.1.2'
+end
+
 appraise "activerecord-5.2" do
   gem 'activerecord', '~> 5.2.0'
   gem 'railties', '~> 5.2.0'
