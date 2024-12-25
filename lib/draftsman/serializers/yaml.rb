@@ -6,7 +6,7 @@ module Draftsman
       extend self # makes all instance methods become module methods as well
 
       def load(string)
-        YAML.load string
+          Psych.safe_load(string, permitted_classes: [ActiveSupport::TimeWithZone, ActiveSupport::TimeZone, Time], aliases: true)
       end
 
       def dump(object)
